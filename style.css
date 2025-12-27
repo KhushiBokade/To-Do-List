@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    position: relative;
+    min-height: 60vh;
+    background: url("./img.jpg");
+    background-position: center ;
+    background-size: cover;
+    color:white;
+}
+
+.container{
+    max-width: 1200px;
+    padding:   1rem;
+    margin: auto;
+    width: 90%;
+}
+
+.nav{
+    min-height: 8vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-items{
+    width: 40%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.headline{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.btn{
+    display: inline-block;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-headline{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin-top:1rem;
+    font-weight: 600;
+}
+
+.section-todo{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.form-todo{
+    min-height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.form-todo input{
+    min-height: 100%;
+}
+
+.form-todo input[type="text"]{
+    width: 78%;
+    padding: 0 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.form-todo input[type="text"]:focus{
+   outline: none;
+}
+
+.form-todo input[type="submit"]{
+    width: 20%;
+    background: #0a1c29;
+    color: white;
+    font-weight: bold;
+
+}
+
+.todo-list li{ 
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: #7599b0;
+    padding: 10px 10vh;
+    margin: 15px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.text{
+    color: black;
+}
+
+.todo-buttons{
+    display: flex;
+    width: 17%;
+    justify-content: space-between;
+}
+
+.todo-btn{
+    padding: 5px 15px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.done{
+    background-color: rgb(23, 125, 10);
+    color: aliceblue;
+}
+
+.remove{
+    background-color: rgb(169, 40, 17);
+    color: aliceblue;
+}
